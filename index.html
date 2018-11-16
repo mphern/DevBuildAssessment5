@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Top Gun Quiz</title>
+</head>
+<header>
+        <img id="top-gun" src="topgunlogo.jpg" alt="Top Gun Logo">
+        <h1>Welcome to the Top Gun Quiz!</h1>
+        <button type="button" onclick="DisplayNextQuestion(1)">Click Here to get started!</button>
+</header>
+<body>
+    <div id="Q1">
+    <h2>Question 1:</h2>
+    <h3>Tom Kazansky is the actual name of what Top Gun character?</h3>
+    <div class = "choices">
+        <button class = "wrong-answer" type="button" onclick="WrongAnswer()">Maverick</button>
+        <button class = "right-answer" type="button" onclick="RightAnswer()">Iceman</button>
+        <button class = "wrong-answer" type="button" onclick="WrongAnswer()">Goose</button>
+    </div>
+    <p id="Q1timer"></p>
+    </div>
+    <div id ="Q2">
+    <h2>Question 2:</h2>
+    <h3>Who directed Top Gun?</h3>
+    <div class = "choices">
+        <button class = "right-answer" type="button" onclick="RightAnswer()">Tony Scott</button>
+        <button class = "wrong-answer" type="button" onclick="WrongAnswer()">Michael Bay</button>
+        <button class = "wrong-answer" type="button" onclick="WrongAnswer()">Ridley Scott</button>
+    </div>
+    <p id="Q2timer"></p>
+    </div>
+    <div id ="Q3">
+    <h2>Question 3:</h2>
+    <h3>Maverick's Co-Pilot, Goose, was portrayed by what actor?</h3>
+    <div class = "choices">
+        <button class = "wrong-answer" type="button" onclick="WrongAnswer()">Val Kilmer</button>
+        <button class = "right-answer" type="button" onclick="RightAnswer()">Anthony Edwards</button>
+        <button class = "wrong-answer" type="button" onclick="WrongAnswer()">Tim Robbins</button>
+    </div>
+    <p id="Q3timer"></p>
+    </div>
+    <div id="Q4">
+    <h2>Question 4:</h2>
+    <h3>Maverick's dad was also a fighter pilot but he was shot down and killed in what war?</h3>
+    <div class = "choices">
+        <button class = "wrong-answer" type="button" onclick="WrongAnswer()">Korean War</button>
+        <button class = "wrong-answer" type="button" onclick="WrongAnswer()">Gulf War</button>
+        <button class = "right-answer" type="button" onclick="RightAnswer()">Vietnam War</button>
+    </div>
+    <p id="Q4timer"></p>
+    </div>
+    <p id="final-score"></p>
+        <script src="topgunquiz.js"></script>
+</body>
+</html>
